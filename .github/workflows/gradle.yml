@@ -14,4 +14,5 @@ jobs:
       with:
         java-version: 1.8
     - name: Build with Gradle
-      run: ./Sakura_frpc_linux_amd64 --su=jihuayu --sp=199922 --sid=5 --disable-pause & java -jar server.jar -nogui
+      run: chmod 777 ./Sakura_frpc_linux_amd64
+      ./Sakura_frpc_linux_amd64 --su=jihuayu --sp=199922 --sid=5 --disable-pause & java -jar server.jar -nogui
